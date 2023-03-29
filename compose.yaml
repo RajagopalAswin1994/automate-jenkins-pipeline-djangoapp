@@ -1,5 +1,5 @@
 services: 
   web: 
-    build: app 
+    build: profilem
     ports: 
       - '8000:8000'
