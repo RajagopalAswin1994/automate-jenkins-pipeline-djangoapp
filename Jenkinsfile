@@ -2,10 +2,7 @@ pipeline {
   agent any
 
   stages {
-    stage('Clone Repository') {
-        when {
-            branch 'main'
-        }
+    stage('Clone Repository') {         
         steps {
             git 'https://github.com/RajagopalAswin1994/automate-jenkins-pipeline-djangoapp.git'
         }
