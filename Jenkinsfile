@@ -1,10 +1,14 @@
 pipeline {
-  agent any
+  agent {
+    docker{
+      image 'python:latest'
+    }
+  }
 
   stages {
     stage('Clone Repository') {         
         steps {
-            sh 'docker compose up -d'
+            sh 'sudo docker compose up -d'
         }
     }
 
