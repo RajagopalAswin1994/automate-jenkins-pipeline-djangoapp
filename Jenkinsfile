@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Clone Repository') {         
         steps {
-            sh 'docker build .'
+            sh 'docker compose up -d'
         }
     }
 
